@@ -13,8 +13,7 @@ exports.dataSource = new typeorm_1.DataSource({
     username: process.env.DB_USER,
     password: process.env.DB_PASS,
     entities: [Prato_1.Prato],
-    migrations: ["src/models/migrations"],
+    migrations: [__dirname + "src/models/migrations"],
     synchronize: true,
-    logging: true,
 });
 //# sourceMappingURL=appDataSource.js.map

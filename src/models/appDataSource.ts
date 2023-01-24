@@ -11,7 +11,6 @@ export const dataSource: DataSource = new DataSource({
     username: process.env.DB_USER,
     password: process.env.DB_PASS,
     entities: [Prato],
-    migrations: ["src/models/migrations"],
+    migrations: [__dirname + "src/models/migrations"],
     synchronize: true,
-    logging: true,
 })
